@@ -1,6 +1,10 @@
 NAME
 
+Holbertonschool-Simple_Shell
+
 SYNOPSIS
+
+It is the creation of a simple unix command interpreter that provides a user interface to access operating system services.
 
 DESCRIPTION
 
@@ -11,3 +15,5 @@ EXAMPLES
 NOTES
 
 AUTHORS
+
+Writing by Oana Fundatureanu and Kévin Guédon.
