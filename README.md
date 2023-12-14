@@ -3,9 +3,9 @@ C - Simple Shell Team Project
 
 TEAM PROJECT:
 
-Oana github: https://github.com/OanaFun
+Oana @https://github.com/OanaFun
 
-Kévin github: https://github.com/Storm2601
+Kévin @https://github.com/Storm2601
 
 
 COMPILATION:
