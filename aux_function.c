@@ -24,8 +24,6 @@ char *_strcat(char *dest, char *src)
 	return (dest);
 }
 
-#include "main.h"
-
 /**
 * _strcmp - compare deux chaînes de caractères
 * @s1: input value
@@ -49,13 +47,18 @@ int _strcmp(char *s1, char *s2)
 	}
 	return (0);
 }
-#include "main.h"
 
 /**
- * _strcpy - copies the string pointed to by src into the dest buffer
- * @dest: copy destination
- * @src: copy source
- * Return: char
+ * _strcpy - copy the string pointed to by src
+ * including the terminating null byte '\0'
+ * to the buffer pointed to by dest
+ *
+ * @dest: the pointer to the destination array
+ * where the content is to be copied
+ *
+ * @src: the string to be copied
+ *
+ * Return: the pointer to dest
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -70,30 +73,31 @@ char *_strcpy(char *dest, char *src)
 }
 
 /**
- * _strdup - duplicate to new memory space location
- * @str: char
- * Return: 0
+ * _strdup - return a pointer to a new string
+ * which is a duplicate of the string parameter str
+ *
+ * @str: the source string
+ *
+ * Return: pointer to the duplicated string,
+ * or NULL if insufficient memory was available
  */
 char *_strdup(char *str)
 {
-	char *new;
-	int i, r = 0;
+	int i, len = 0;
+	char *copy;
 
 	if (str == NULL)
 		return (NULL);
-	i = 0;
-	while (str[i] != '\0')
-		i++;
+	while (str[len] != '\0')
+		len++;
 
-	new = malloc(sizeof(char) * (i + 1));
-
-	if (new == NULL)
+	copy = malloc((sizeof(char) * len) + 1);
+	if (copy == NULL)
 		return (NULL);
-
-	for (r = 0; str[r]; r++)
-		new[r] = str[r];
-
-	return (new);
+	for (i = 0; i < len; i++)
+		copy[i] = str[i];
+	copy[i] = '\0';
+	return (copy);
 }
 
 /**
