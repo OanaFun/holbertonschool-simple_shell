@@ -10,9 +10,7 @@
 
 char *_strtok(char *str, const char *delim)
 {
-	char *array = NULL;
-	char *token;
-	char *str_copy = NULL;
+	char *array = NULL; char *token; char *str_copy = NULL;
 	int i = 0, counter = 0;
 
 	if (str == NULL)
