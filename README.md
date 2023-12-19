@@ -33,9 +33,11 @@ PARAMETERS :
 
 
 RETURN VALUE :
+
 Returns the value of the command typed in the shell.
 
 NOTES :
+ 
  The supporting set of functions: int _strlen, int _strcmp, char *_strcat, char *_strcpy, char *_strdup, used within the function can be found in file aux_functions.c
 
 FLOWCHART :
