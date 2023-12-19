@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * check_path - check if command is in the path directories
- * @string: an array of strings
- * @env: an array of environment variables
- * Return: pointer to the linked list
+ * check_path - check if command is in the path directories.
+ * @string: an array of strings.
+ * @env: an array of environment variables.
+ * Return: pointer to the linked list.
 */
 void check_path(char **string, char **env)
 {

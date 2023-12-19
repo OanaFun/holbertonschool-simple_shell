@@ -4,8 +4,8 @@
  * _strtok - extract tokens from strings
  * @str: string to be parsed
  * @delim: character that delimits the tokens in the parsed string
- * Return: a pointer to the first character of the first token found in the string;
- * if there are no more tokens left, a NULL pointer is returned.
+ * Return: a pointer to the first character of the first token found in the
+ * string; if there are no more tokens left, a NULL pointer is returned.
 */
 
 char *_strtok(char *str, const char *delim)

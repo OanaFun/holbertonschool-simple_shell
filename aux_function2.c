@@ -1,12 +1,9 @@
-#include "_atoi.c"
+#include "main.h"
 #include <stdlib.h>
 /**
- * _atoi - convert a string to an integer
- *
- * @s: pointer to input string
- *
- * Return: 0 if there are no numbers in the string
- *
+ * _atoi - convert a string to an integer.
+ * @s: pointer to input string.
+ * Return: 0 if there are no numbers in the string.
 */
 int _atoi(char *s)
 {

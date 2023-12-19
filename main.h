@@ -15,19 +15,15 @@
                         /** system functions */
 /** prototypes */
 int main(void);
-char *_strcat(char *dest, char *src);
+int _strlen(char *s);
 int _strcmp(char *s1, char *s2);
+int _atoi(char *s);
+char *_strcat(char *dest, char *src);
 char *_strcpy(char *dest, char *src);
 char *_strdup(char *str);
-void free_grid(char **grid);
 char *_strstr(char *haystack, char *needle);
 char *_strtok(char *str, const char *delim);
-char *get_env(char *name);
-char *find_path(char *str, char *input);
-char *attach_path(char *str, char **input);
-void shell_exit(char **token_array, char *buffer, int status);
-int fork_handler(char **token_array, char *buffer, int status);
-int execute(char **token_array, char *buffer, int count, int status);
-void print_env(void);
+char *_getenv(const char *name, char **env);
+void check_path(char **string, char **env);
 
 #endif

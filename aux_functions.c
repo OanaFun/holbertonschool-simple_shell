@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * _strlen - function returns the length of a string
- *
- * @s: string to calculate the length
- *
- * Return: return the value of '_strlen'
+ * _strlen - function returns the length of a string.
+ * @s: string to calculate the length.
+ * Return: return the value of '_strlen'.
  */
 int _strlen(char *s)
 {
@@ -19,10 +17,10 @@ int _strlen(char *s)
 }
 
 /**
- * _strcat - function that concatenates two strings
- * @dest: the destination chain
- * @src: the source chain
- * Return: chain value
+ * _strcat - function that concatenates two strings.
+ * @dest: the destination chain.
+ * @src: the source chain.
+ * Return: chain value.
  **/
 
 char *_strcat(char *dest, char *src)
@@ -43,9 +41,9 @@ char *_strcat(char *dest, char *src)
 }
 
 /**
-* _strcmp - compare deux chaînes de caractères
-* @s1: input value
-* @s2: input value
+* _strcmp - compares two strings.
+* @s1: input value.
+* @s2: input value.
 * Return: s1[i] - s2[i]
 */
 
@@ -69,14 +67,11 @@ int _strcmp(char *s1, char *s2)
 /**
  * _strcpy - copy the string pointed to by src
  * including the terminating null byte '\0'
- * to the buffer pointed to by dest
- *
+ * to the buffer pointed to by dest.
  * @dest: the pointer to the destination array
- * where the content is to be copied
- *
- * @src: the string to be copied
- *
- * Return: the pointer to dest
+ * where the content is to be copied.
+ * @src: the string to be copied.
+ * Return: the pointer to dest.
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -92,12 +87,10 @@ char *_strcpy(char *dest, char *src)
 
 /**
  * _strdup - return a pointer to a new string
- * which is a duplicate of the string parameter str
- *
- * @str: the source string
- *
+ * which is a duplicate of the string parameter str.
+ * @str: the source string.
  * Return: pointer to the duplicated string,
- * or NULL if insufficient memory was available
+ * or NULL if insufficient memory was available.
  */
 char *_strdup(char *str)
 {
