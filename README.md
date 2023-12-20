@@ -41,3 +41,8 @@ NOTES :
  The supporting set of functions: int _strlen, int _strcmp, char *_strcat, char *_strcpy, char *_strdup, used within the function can be found in file aux_functions.c
 
 FLOWCHART :
+
+
+<picture>
+ <img alt="flowchart description of simple_shell" src="(https://github.com/OanaFun/holbertonschool-simple_shell/blob/main/Blank%20diagram.png?raw=true)">
+</picture>
