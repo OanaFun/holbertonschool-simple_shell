@@ -8,10 +8,10 @@
  * string; if there are no more tokens left, a NULL pointer is returned.
 */
 
-char *_strtok(char *str, const char *delim)
+char **_strtok(char *str, const char *delim)
 {
-	char *array = NULL; char *token; char *str_copy = NULL;
-	int i = 0, counter = 0;
+	char **array = NULL; char *token; char *str_copy = NULL;
+	int i = 0, j = 0, counter = 0;
 
 	if (str == NULL)
 	{
@@ -46,7 +46,7 @@ char *_strtok(char *str, const char *delim)
 
 	while (token != NULL)
 	{
-	      array[i] == strdup(token);  /* Duplicate each token */
+	      array[i] = strdup(token);  /* Duplicate each token */
 	      if (array[i] == NULL)
 	      {
 			for (j = 0; j < i; j++)  /* Handle memory allocation failure */
