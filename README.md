@@ -44,5 +44,5 @@ FLOWCHART :
 
 
 <picture>
- <img alt="flowchart description of simple_shell" src="(https://github.com/OanaFun/holbertonschool-simple_shell/blob/main/Blank%20diagram.png?raw=true)">
+ <img alt="flowchart description of simple_shell" src="https://github.com/OanaFun/holbertonschool-simple_shell/blob/main/Blank%20diagram.png
 </picture>
