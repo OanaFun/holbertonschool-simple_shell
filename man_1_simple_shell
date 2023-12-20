@@ -4,7 +4,11 @@ NAME :
 SYNOPSIS :
 
 DESCRIPTION :
-It is the creation of a simple unix command interpreter that provides a user interface to access operating system services.
+
+The main function creates a basic shell that continuously reads user input, 
+processes commands, handles built-in commands like "exit" and "env",
+executes external commands, and maintains an exit status while providing
+a simple shell prompt.
 
 RETURN VALUE :
 
