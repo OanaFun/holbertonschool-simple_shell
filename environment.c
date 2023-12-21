@@ -25,8 +25,8 @@ char *_getenv(char *env_var)
 		{
 			return (&environ[i][j + 1]);
 		}
-		return (NULL);
 	}
+	return (NULL);
 }
 
 /**
