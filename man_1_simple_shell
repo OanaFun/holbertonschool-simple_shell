@@ -5,7 +5,7 @@ SYNOPSIS :
 
 DESCRIPTION :
 
-The main function creates a basic shell that continuously reads user input, 
+The ***main*** function creates a basic shell that continuously reads user input, 
 processes commands, handles built-in commands like "exit" and "env",
 executes external commands, and maintains an exit status while providing
 a simple shell prompt.
