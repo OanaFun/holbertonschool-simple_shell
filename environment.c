@@ -7,23 +7,26 @@
 */
 char *_getenv(char *env_var)
 {
-	int i = 0, j = 0;
+	int i, j;
 	int status;
 
-	while (environ[i])
+	for (i = 0; environ[i] != NULL; i++)
 	{
 		status = 1;
-
 		for (j = 0; environ[i][j] != '='; j++)
 		{
-			if (environ[i][j] != env_var[j])
+			if (env_var[j] != environ[i][j])
+			{
 				status = 0;
+				break;
+			}
 		}
-		if (status == 1)
-			break;
-		i++;
+		if (status)
+		{
+			return (&environ[i][j + 1]);
+		}
+		return (NULL);
 	}
-	return (&environ[i][j + 1]);
 }
 
 /**
