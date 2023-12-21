@@ -1,33 +1,29 @@
 #include "main.h"
 
 /**
- * _getenv - get an environment variable
- * @name: pointer to the name of the environment variable
- * @env: list of strings representing environment variables
- * Return: pointer to the value in the environment
- * or NULL is there is no match
+ * _getenv - get environment variables
+ * @env_var: environment variable
+ * Return: return the content of the environment variable
 */
-char *_getenv(const char *name, char **env)
+char *_getenv(char *env_var)
 {
 	int i = 0, j = 0;
-	int res, len;
+	int status;
 
-	while (env[i] != NULL)
+	while (environ[i])
 	{
-		res = strcmp(name, (const char *)env[i]);
-		if (res ==  1)
+		status = 1;
+
+		for (j = 0; environ[i][j] != '='; j++)
 		{
-			len = strlen(env[i]);
-			while (env[i][j] != '=')
-			{
-				j++;
-			}
-			len -= j;
-			return (env[i] + j + 1);
+			if (environ[i][j] != env_var[j])
+				status = 0;
 		}
+		if (status == 1)
+			break;
 		i++;
 	}
-	return (NULL);
+	return (&environ[i][j + 1]);
 }
 
 /**
