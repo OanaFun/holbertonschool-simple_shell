@@ -13,19 +13,24 @@ int main(void)
 	while (1)
 	{
 		if (isatty(0))
-			printf("hsh$ ");
+			printf("$ ");
 		buff_size = getline(&buff, &read_size, stdin);
-		if (buff_size == -1 || strcmp("exit\n", buff) == 0)
+		if ((buff_size == -1 || strcmp("exit\n", buff)) == 0)
+		{
 			free(buff);
-			break;
+			exit(EXIT_SUCCESS);
+		}
 		buff[buff_size - 1] = '\0';
 		if (strcmp("env", buff) == 0)
-			_env();
+		{
+			_printenv();
 			continue;
+		}
 		if (empty_line(buff) == 1)
+		{
 			exit_status = 0;
 			continue;
-
+		}
 		args = _split(buff, " ");
 		args[0] = search_path(args[0]);
 

@@ -14,11 +14,13 @@
 #include <sys/types.h> /** contains definitions of data types used by */
                         /** system functions */
 /** Prototypes */
-char *_getenv(const char *name, char **env)
-void _printenv(void)
-int empty_line(char *buff)
-int execute(char **args)
-char **_split(char *str, const char *delim)
-char *search_path(char *command)
+char *_getenv(char *env_var);
+void _printenv(void);
+int empty_line(char *buff);
+int execute(char **args);
+char **_split(char *str, const char *delim);
+char *search_path(char *command);
+
+extern char**environ;
 
 #endif

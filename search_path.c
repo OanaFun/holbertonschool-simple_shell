@@ -14,6 +14,8 @@ char *search_path(char *command)
 	int i = 0, path_len = 0;
 	struct stat info;
 
+	for (; environ[i]; i++)
+		printf("%s\n", path);
 	if (stat(command, &info) == 0)
 		return (command);
 
