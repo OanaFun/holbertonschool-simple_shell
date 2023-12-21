@@ -1,40 +1,47 @@
-.SH NAME : 
+.BI NAME : 
 
 Simple_Shell -
 
-.SH SYNOPSIS :
+.BI SYNOPSIS :
 
 .B ./hsh 
 [command] [options] [FILE]
 
-.SH DESCRIPTION :
+.BI DESCRIPTION :
 
-.BI The main function creates a basic shell that continuously reads user input, processes commands, handles built-in commands like .BI "exit" and "env", executes external commands, and maintains an exit status while providing a simple shell prompt.
+.B The main function creates a basic shell that continuously reads user input, processes commands, handles built-in commands like 
+.B "exit" and "env", executes external commands, and maintains an exit status while providing a simple shell prompt.
 
-.BI The function _getenv is used to find and retrieve the value of a specific environment variable by iterating through the list .BI of environment variables (env) and comparing each variable name with the given name. If a match is found, it returns a pointer .BI to the value of that environment variable; otherwise, it returns NULL.
+.B The function _getenv is used to find and retrieve the value of a specific environment variable by iterating through the list 
+.B of environment variables (env) and comparing each variable name with the given name. If a match is found, it returns a pointer
+.B to the value of that environment variable; otherwise, it returns NULL.
 
-.BI The function _printenv iterates through the environ array and prints each environment variable to the standard output,      .BI displaying the variable name and its value in the format "name=value", followed by a newline.
+.B The function _printenv iterates through the environ array and prints each environment variable to the standard output,
+.B displaying the variable name and its value in the format "name=value", followed by a newline.
 
-.BI The function empty_line checks each character of a given line (buff) to determine if it contains only spaces. If the line   .BI consists entirely of spaces, it returns 1; otherwise, it returns 0.
+.B The function empty_line checks each character of a given line (buff) to determine if it contains only spaces. If the line
+.B consists entirely of spaces, it returns 1; otherwise, it returns 0.
 
-.BI The _split function divides a given string (str) into multiple substrings using the provided separator (delim). It tokenizes .BI the string and stores each substring in an array of strings, returning this array of substrings.
+.B The _split function divides a given string (str) into multiple substrings using the provided separator (delim). 
+.B It tokenizes the string and stores each substring in an array of strings, returning this array of substrings.
 
-.BI The search_path function returns the path where the input command was found.
+.B The search_path function returns the path where the input command was found.
 
-.BI The execute function creates a child process using fork(), and in the child process, it attempts to execute the command     .BI specified in args[0] using execve. If successful, the child process executes the command, and the parent process waits for the 
-.BI child to complete, retrieving its exit status. The function returns the exit status of the child process after execution.
+.B The execute function creates a child process using fork(), and in the child process, it attempts to execute the command
+.B specified in args[0] using execve. If successful, the child process executes the command, and the parent process waits for the 
+.B child to complete, retrieving its exit status. The function returns the exit status of the child process after execution.
 
-.SH RETURN VALUE :
+.BI RETURN VALUE :
 
 The return command will be WEXITSTATUS (status).
 
-.SH EXAMPLE :
+.BI EXAMPLE :
 
 $ls
 
 .B root tmp files 
 
-.SH NOTES :
+.BI NOTES :
 
 No limitations or errors encountered.
 
