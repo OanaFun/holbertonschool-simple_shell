@@ -35,8 +35,8 @@ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh.
 The shell shall return the exit status of the last command it invoked or attempted to invoke.
 
 ## NOTES :
- 
-The set of supporting functions: 'empty_line', '_getenv', 'execute', 'search_path', '_split' used in the function can be found in the files check_empty_line.c , environment.c , execute.c , search_path.c and split_string.c .
+
+The set of supporting functions: 'empty_line', '_getenv', 'execute', 'search_path', '_split' used in the function can be found in the files check_empty_line.c , environment.c , execute.c , search_path.c and split_string.c.
 
 ## FLOWCHART :
 
