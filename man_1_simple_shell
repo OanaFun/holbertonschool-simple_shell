@@ -1,3 +1,5 @@
+.TH MAN PAGE:HSH
+
 .SH NAME :
 
 Simple_Shell -
@@ -31,7 +33,7 @@ The return command will be WEXITSTATUS (status).
 
 $ls
 
-.B root tmp files
+$ root tmp files
 
 .SH NOTES :
 
